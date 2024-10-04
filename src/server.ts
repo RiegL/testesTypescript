@@ -1,6 +1,8 @@
-const express = require('express');
-const produtoRoute = require('./src/module/produto/produto.route');
+import express from 'express';
+import produtoRoute from './module/produto/produto.route';
+
 const app = express();
+
 app.use(express.json());
 
 app.use('/produto', produtoRoute);
